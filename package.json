@@ -13,6 +13,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@hapi/boom": "^10.0.1",
     "axios": "^1.10.0",
     "baileys": "^6.7.18",
     "better-sqlite3": "^12.1.1",
