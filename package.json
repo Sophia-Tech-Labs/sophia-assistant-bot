@@ -6,7 +6,11 @@
     "lib": "lib"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "pm2 start index.js --attach --name SOPHIA-ASSISTANT",
+    "restart": "pm2 restart SOPHIA-ASSISTANT && pm2 logs SOPHIA-ASSISTANT",
+    "logs": "pm2 logs SOPHIA-ASSISTANT",
+    "delete": "pm2 delete SOPHIA-ASSISTANT",
+    "stop": "pm2 stop SOPHIA-ASSISTANT"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +27,7 @@
     "express": "^5.1.0",
     "node-cache": "^5.1.2",
     "pg": "^8.16.2",
-    "pino": "^9.7.0"
+    "pino": "^9.7.0",
+    "pm2": "^6.0.8"
   }
 }
