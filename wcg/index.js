@@ -112,7 +112,8 @@ class WCGIntegration {
   // Process potential WCG messages (call this from message listener)
   async processMessage(groupId, playerJid, playerName, messageText, messageInstance) {
     try {
-      const trimmedText = messageText.trim().toLowerCase();
+      const trimmedText = messageText ? messageText.trim().toLowerCase() : "";
+
       
       // Only process if game is active and listening
       const isListening = this.gameManager.db.isGameListening(groupId);
