@@ -6,7 +6,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "start": "pm2 start index.js --attach --name SOPHIA-ASSISTANT",
+    "start": "pm2 start . --attach --name SOPHIA-ASSISTANT",
     "restart": "pm2 restart SOPHIA-ASSISTANT && pm2 logs SOPHIA-ASSISTANT",
     "logs": "pm2 logs SOPHIA-ASSISTANT",
     "delete": "pm2 delete SOPHIA-ASSISTANT",
@@ -20,9 +20,8 @@
     "@google/genai": "^1.7.0",
     "@hapi/boom": "^10.0.1",
     "axios": "^1.10.0",
-    "baileys": "^6.7.18",
+    "baileys": "github:WhiskeySockets/Baileys",
     "better-sqlite3": "^12.1.1",
-    "cohere-ai": "^7.17.1",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "node-cache": "^5.1.2",
