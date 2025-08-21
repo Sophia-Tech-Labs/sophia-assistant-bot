@@ -138,6 +138,7 @@ class WCGGameManager {
       );
       const nextPlayerPhone = this.extractPhoneNumber(nextPlayer.player_jid);
 
+      
       const playerList = players
         .map((p, index) => `${index + 1}. ${p.player_name}`)
         .join("\n");

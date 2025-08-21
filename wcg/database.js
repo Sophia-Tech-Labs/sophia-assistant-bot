@@ -12,7 +12,7 @@ class WCGDatabase {
     db.prepare(`
       CREATE TABLE IF NOT EXISTS wcg_games (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
-        group_id TEXT NOT NULL UNIQUE,
+        group_id TEXT NOT NULL,
         current_word TEXT,
         next_letter TEXT,
         word_size INTEGER DEFAULT 4,
